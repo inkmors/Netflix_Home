@@ -1,0 +1,406 @@
+
+
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body{
+    /* width: 100vw; */
+    height: 100%;
+    background-color: rgb(29, 29, 29);
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+}
+
+/* ============================================ HEADER ================================================================ */
+header{
+    height: 4rem;
+    background-color: rgb(29, 29, 29);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 100;
+}
+
+nav{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    justify-content: space-between;
+    transition: all ease 0.5s;
+}
+
+nav.ativo{
+    background-color: rgb(29, 29, 29);
+}
+
+nav .div-header-group-left{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding: 0px 60.875px;
+}
+
+nav ul{
+    display: flex;
+    gap: 1.3rem;
+    text-decoration: none;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.884);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 180%;
+    font-size: 15px;
+    text-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+nav ul li a:hover{
+    color: rgba(184, 184, 184, 0.884);
+    transition: all ease 0.3s;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index:-1;
+}
+
+.div-header-group-right{
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 60.875px;
+    gap: 20px;
+}
+
+.div-icon-ajust{
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.div-icon-ajust .class-arrow{
+    transition: 0.5s;
+}
+
+.div-icon-ajust .class-arrow:hover{
+    transform: rotate(60deg);
+    transition: 0.5s;
+}
+
+/* ========================================================================================================== */
+
+/* ============================================ MAIN ================================================================ */
+
+main{
+    position: relative;
+    padding: 60.875px;
+    padding-top: 20rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+}
+
+main .div-primary-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+main video{
+    position: relative;
+}
+
+.all{
+    position: absolute;
+}
+
+.div-alight-text-main{
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 180%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.div-bottons-top-main{
+    display: flex;
+    gap: 1rem;
+}
+
+.div-bottons-top-main .btn-one{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 180%;
+    font-size: 19px;
+    width: 13rem;
+    height: 3.5rem;
+    border-radius: 5px;
+    transition: all ease 0.2s;
+}
+
+.div-bottons-top-main .btn-one:hover{
+    background-color: rgba(255, 255, 255, 0.658);
+    transition: all ease 0.2s;
+}
+
+.div-bottons-top-main .btn-two{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 180%;
+    font-size: 18px;
+    width: 13rem;
+    height: 3.5rem;
+    border-radius: 5px;
+    background-color: rgba(65, 65, 65, 0.705);
+    color: white;
+    transition: all ease 0.2s;
+}
+
+.div-bottons-top-main .btn-two:hover{
+    background-color: rgba(65, 65, 65, 0.425);
+    transition: all ease 0.2s;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+ 
+:root {
+    --handle-size: 3rem;
+    --img-gap: .25rem;
+}
+  
+.div-section-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    overflow: hidden;
+}
+  
+.div-posts-carrousel {
+    --items-per-screen: 6;
+    --slider-index: 0;
+    display: flex;
+    flex-grow: 1;
+    margin: 0 var(--img-gap);
+    transform: translateX(calc(var(--slider-index) * -100%));
+    transition: transform 250ms ease-in-out;
+}
+  
+.div-posts-carrousel > img {
+    flex: 0 0 calc(100% / var(--items-per-screen));
+    max-width: calc(100% / var(--items-per-screen));
+    aspect-ratio: 16 / 9;
+    padding: var(--img-gap);
+    border-radius: 1rem;
+}
+  
+.class-btn {
+    position: absolute;
+    border: none;
+    border-radius: 1rem;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 10;
+    margin: var(--img-gap) 0;
+    width: var(--handle-size);
+    cursor: pointer;
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    line-height: 0;
+    transition: background-color 150ms ease-in-out;
+}
+  
+.left-btn {
+    left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+  
+.right-btn {
+    right: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+  
+.class-btn:hover, .class-btn:focus {
+    background-color: rgba(255, 255, 255, 0);
+}
+  
+.div-text {
+    transition: transform 150ms ease-in-out;
+}
+  
+.class-btn:hover .div-text, .class-btn:focus .div-text {
+    transform: scale(1.2);
+}
+  
+.div-section-title-progress {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+}
+
+.class-title-watch-now {
+    width: 100%;
+    font-family: system-ui;
+    font-size: 1.5rem;
+    color: white;
+    margin: 0;
+}
+  
+.class-progress-bar {
+    display: flex;
+    gap: .25rem;
+}
+  
+.progress-item {
+    flex: 0 0 1.5rem;
+    min-width: 1.5rem;
+    height: .2rem;
+    background-color: rgba(255, 255, 255, .5);
+}
+  
+.progress-item.active {
+    background-color: rgba(255, 255, 255, .9);
+}
+  
+@media (max-width: 1000px) {
+    .div-posts-carrousel {
+      --items-per-screen: 3;
+    }
+}
+  
+@media (max-width: 500px) {
+    .div-posts-carrousel {
+      --items-per-screen: 2;
+    }
+}
+/* ========================================================================================================== */
+
+/* ============================================ FOOTER ================================================================ */
+
+footer{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 180%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+footer input{
+    width: 130px;
+    height: 35px;
+    background-color: rgba(197, 197, 197, 0);
+    border: 1px solid;
+    border-radius: 2px;
+    border-color: rgb(131, 131, 131);
+    color: rgb(131, 131, 131);
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+
+footer input:hover{
+    color: white;
+    transition: all ease 0.3s;
+}
+
+footer p{
+    font-size: 12.5px;
+    color: rgb(131, 131, 131);
+}
+
+.sub-div-footer-alight{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.div-footer-btn-copy{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.div-footer-alight-itens-left{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.div-footer-alight-itens-top-socials{
+    display: flex;
+    align-items: center;
+}
+
+.div-icons-socials-footer{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.div-footer-info-uls{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.div-footer-info-uls ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.div-footer-info-uls ul li{
+    list-style: none;
+}
+
+.div-footer-info-uls ul li a{ 
+    text-decoration: none;
+    color: rgb(131, 131, 131);
+}
+
+.div-footer-info-uls ul li a:hover{ 
+    text-decoration: underline;
+}
+
+/* ========================================================================================================== */

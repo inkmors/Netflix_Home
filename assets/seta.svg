@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 31" width="36" height="31">
+	<title>Novo Projeto</title>
+	<defs>
+		<image  width="37" height="33" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAhCAMAAABp0ZInAAAAAXNSR0IB2cksfwAAAGxQTFRF////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////NhtAPQAAACR0Uk5THEAwHvj/YACAyAfhN1iooBXyePxQmLgq1UhwA+poiA2wRcEKeiSJsgAAAM9JREFUeJyN09kWgjAMRdEq6KVMMsgkk8P//6NgBaFNW/OYtZ/OShg72OfIHPdknTODZ0UcDH5gU+GkEFlQjFmBG5HrCBUalQehcDGgwF9UkupVhEUh0yKOn9LWyMONwlWjCmwVShKlyV5VOaUy7BUKAtW+rKgaDWSFm4JKqKqt5QoVodDQFSQl1egSWlW74+5BKwzbCq1OjR1RQVHoV3SHXq015jPWKjy+aoBJIRYVRrMSr36GWX1qcHmpqDGYn9mmplePlZ2q8HT+US919QY5pR/z9eMMXAAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+	</style>
+	<use id="Forma 1" href="#img1" x="0" y="-1"/>
+</svg>
